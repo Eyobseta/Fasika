@@ -91,7 +91,7 @@
         /* --- Hero/Banner Section --- */
         #banner {
             position: relative;
-           background-image: url(/assets/image_1_1765669638932.jpg);
+           background-image: url(assets/image_1_1765669638932.jpg);
             background-size: cover;
             background-position: center;
             background-attachment: fixed; /* Parallax effect */
