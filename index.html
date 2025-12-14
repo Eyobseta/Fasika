@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasika Hotel - Luxury Stay</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--custom css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#nav-bar" data-bs-offset="100">
+
+    <!-- Navigation -->
+    <section id="nav-bar">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">F.H</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars" style="color: #fff; font-size: 1.5rem;"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link active" href="#banner">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#rooms">Rooms</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-custom btn-sm mt-3 mt-lg-0" href="#rooms">Book Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Banner / Hero Section -->
+    <section id="banner">
+        <div class="container banner-content">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-12">
+                    <h1 class="hotel-title">FASIKA HOTEL</h1>
+                    <p class="lead text-white-100 hotel-para">Experience luxury in the heart of the Langano Lake</p>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Promo Card 1 -->
+                <div class="col-md-3 col-lg-4 promo-box-1">
+                    <div class="promo-box text-center">
+                        <i class="fa-solid fa-bed feature-icon text-white mb-3" style="font-size: 2rem;"></i>
+                        <p class="promo-title text-white">Luxury Rooms</p>
+                        <p class="text-white-50">
+                    Experience refined comfort in our premium suites, offering breathtaking panoramic views and thoughtfully curated interiors.
+                        </p>
+
+                        <a href="#rooms" class="btn btn-custom">View Rooms</a>
+                    </div>
+                </div>
+
+                <!-- Promo Card 2 -->
+                <div class="col-md-4 col-lg-4">
+                    <div class="promo-box text-center">
+                        <i class="fa-solid fa-utensils feature-icon text-white mb-3" style="font-size: 2rem;"></i>
+                        <p class="promo-title text-white">Fine Dining</p>
+                      <p class="text-white-50">
+                        Delight in expertly prepared dishes, created by world-class chefs to satisfy every palate.
+                        </p>
+
+                        <a href="#contact" class="btn btn-outline-light-custom">Reserve Table</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Strip -->
+    <section id="features">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <div class="feature-card">
+                        <i class="fa-solid fa-wifi feature-icon"></i>
+                        <h5>Fast WiFi</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <div class="feature-card">
+                        <i class="fa-solid fa-person-swimming feature-icon"></i>
+                        <h5>Pool</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="feature-card">
+                        <i class="fa-solid fa-spa feature-icon"></i>
+                        <h5>Spa</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="feature-card">
+                        <i class="fa-solid fa-martini-glass-citrus feature-icon"></i>
+                        <h5>Bar</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Rooms Section -->
+    <section id="rooms">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Rooms</h2>
+                <p>Choose from our wide range of premium rooms designed for your comfort.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Room 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="room-card">
+                        <div class="room-img-wrapper">
+                            <span class="price-tag">$120/Night</span>
+                            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Standard Room">
+                        </div>
+                        <div class="room-details">
+                            <h4>Standard Room</h4>
+                            <div class="room-amenities mb-3">
+                                <i class="fa-solid fa-bed"></i> 2 Beds
+                                <i class="fa-solid fa-user-group ms-3"></i> 3 Guests
+                            </div>
+                            <p class="description">A comfortable room with all essential amenities for a relaxing stay.</p>
+                            <a href="#contact" class="btn btn-sm btn-outline-dark w-100  btn-room">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Room 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="room-card">
+                        <div class="room-img-wrapper">
+                            <span class="price-tag">$250/Night</span>
+                            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Deluxe Suite">
+                        </div>
+                        <div class="room-details">
+                            <h4>Deluxe Suite</h4>
+                            <div class="room-amenities mb-3">
+                                <i class="fa-solid fa-bed"></i> 1 King Bed
+                                <i class="fa-solid fa-user-group ms-3"></i> 2 Guests
+                            </div>
+                            <p class="description">Spacious suite with a city view, mini-bar, and luxurious bathroom.</p>
+                            <a href="#contact" class="btn btn-sm btn-custom w-100 btn-room-book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Room 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="room-card">
+                        <div class="room-img-wrapper">
+                            <span class="price-tag">$450/Night</span>
+                            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Presidential Suite">
+                        </div>
+                        <div class="room-details">
+                            <h4>Presidential Suite</h4>
+                            <div class="room-amenities mb-3">
+                                <i class="fa-solid fa-bed"></i> 2 King Beds
+                                <i class="fa-solid fa-user-group ms-3"></i> 5 Guests
+                            </div>
+                            <p class="description">Ultimate luxury with private pool access, kitchen, and dedicated staff.</p>
+                            <a href="#contact" class="btn btn-sm btn-outline-dark w-100 btn-room">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>We provide world-class amenities to make your stay unforgettable.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box">
+                        <i class="fa-solid fa-utensils"></i>
+                        <h4>Restaurant & Bar</h4>
+                        <p class="text-white-100">Enjoy gourmet meals and signature cocktails in our exclusive dining area.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box">
+                        <i class="fa-solid fa-car"></i>
+                        <h4>Airport Pickup</h4>
+                        <p class="">Complementary luxury transport from the airport to our doorstep.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box">
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <h4>Fitness Center</h4>
+                        <p class="text-white-100">State-of-the-art gym equipment to keep up with your fitness routine.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box">
+                        <i class="fa-solid fa-shirt"></i>
+                        <h4>Laundry Service</h4>
+                        <p class="text-white-100">Fast and professional laundry and dry cleaning services available.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box">
+                        <i class="fa-solid fa-person-chalkboard"></i>
+                        <h4>Conference Halls</h4>
+                        <p class="text-white-100">Spacious halls equipped with modern tech for your business meetings.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box">
+                        <i class="fa-solid fa-clock"></i>
+                        <h4>24/7 Room Service</h4>
+                        <p class="text-white-100">Whatever you need, whenever you need it, we are just a call away.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Photo Gallery</h2>
+                <p>Take a glimpse into the beauty and elegance of Fasika Hotel.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hotel Exterior">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pool">
+                        <div class="gallery-overlay">
+                           <i class="fa-solid fa-heart"></i>>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Lobby">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Restaurant">
+                        <div class="gallery-overlay">
+                           <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Room Interior">
+                        <div class="gallery-overlay">
+                             <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bar">
+                        <div class="gallery-overlay">
+                             <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for reservations or inquiries.</p>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <div class="contact-info-box">
+                        <h3>Get In Touch</h3>
+                        <p class="text-muted mb-4">We are available 24/7 to answer your questions and help you with your booking.</p>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h5 class="mb-1">Address</h5>
+                                <p class="mb-0 text-muted">Negelle Arsi,Ethiopia</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h5 class="mb-1">Phone</h5>
+                                <p class="mb-0 text-muted">+251 911 123 456</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h5 class="mb-1">Email</h5>
+                                <p class="mb-0 text-muted">info@fasikahotel.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Subject">
+                        <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                        <button type="submit" class="btn submit btn-custom w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="#" class="footer-brand">Fasika Hotel</a>
+                    <p>Experience the pinnacle of luxury and hospitality. Whether you are here for business or leisure, we ensure a memorable stay.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#banner">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">Support</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email Address" aria-label="Email">
+                        <button class="btn btn-custom" type="button"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 pt-4 border-top border-secondary">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Fasika Hotel. All Rights Reserved || JOSE SOLUTIONS</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+   <!--custom JS-->
+    <script src="app.js"></script>
+</body>
+</html>

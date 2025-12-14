@@ -1,0 +1,466 @@
+  /* --- Global Styles --- */
+        :root {
+              --primary-color: #06b6d4; /* Cyan */
+              --secondary-color: #f87171; /* Red/Highlight */
+              --dark-bg: #030712; /* Deep Dark */
+             --card-bg: #111827; /* Dark Gray for cards */
+            --text-color: #f3f4f6; /* Light Gray Text */
+            --gray-text: #9ca3af; /* Subdued Gray Text */
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            background-color: #111;
+            color: var(--card-bg);
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 700;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-family: 'Sofia', cursive;
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .section-header p {
+            color: var(--gray-text);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        /* --- Navigation --- */
+        #nav-bar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            padding: 0;
+            border-bottom: solid 1px var(--gray-text);
+            background-color: #111;
+        }
+
+        .navbar-brand {
+            font-family: 'Sofia', cursive;
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--text-color) !important;
+            padding-left: 10px;
+        }
+
+        .nav-link {
+            color: var(--text-color) !important;
+            font-weight: 600;
+            margin-right: 15px;
+            transition: color 0.3s;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--gray-text) !important;
+        }
+
+        .navbar-toggler {
+            border: none;
+            outline: none !important;
+        }
+        
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        /* --- Hero/Banner Section --- */
+        #banner {
+            position: relative;
+           background-image: url(/assets/image_1_1765669638932.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Parallax effect */
+            min-height: 100vh; /* Full screen height */
+            display: flex;
+            align-items: center;
+            color: var(--text-color);
+            padding: 0;
+        }
+
+        /* Overlay to make text readable */
+        #banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hotel-title {
+            color: var(--text-color);
+            font-family: 'Sofia', cursive;
+            font-size: 5rem;
+            margin: 20px 0px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+            animation: fadeInDown 1s ease-out;
+        }
+        .hotel-para{
+            font-weight: bold;
+            color: var(--text-color);
+        }
+
+        .promo-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 40px;
+            border-radius: 15px;
+            margin-top: 30px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            transition: transform 0.3s ease;
+        }
+
+        .promo-box-1 {
+           padding-bottom: 15px;
+        }
+
+        .promo-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .promo-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        /* --- Buttons --- */
+        .btn-custom {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            border: none;
+            letter-spacing: 1px;
+        }
+
+        .btn-custom:hover {
+            border: solid 1px var(--primary-color);
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(212, 163, 115, 0.4);
+        }
+
+        .btn-outline-light-custom {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            letter-spacing: 1px;
+        }
+
+        .btn-outline-light-custom:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        /* --- Features/Amenities Section (Small Strip) --- */
+        #features {
+            padding: 1px 0;
+            background: #fcb001;
+            border-bottom: 1px solid var(--gray-text);
+            
+        }
+        
+        .feature-card {
+            text-align: center;
+            padding: 20px;
+            transition: 0.3s;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--text-color);
+            margin-bottom: 15px;
+        }
+
+        /* --- Services Section --- */
+        #services {
+            background-color: var(--dark-bg);
+        }
+
+        .service-box {
+            background: var(--text-color);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+            text-align: center;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-box i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .service-box h4 {
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+        }
+
+        /* --- Rooms Section --- */
+        #rooms {
+            background-color: var(--text-color);
+        }
+
+        .room-card {
+            border: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            border-radius: 15px;
+            background: var(--card-bg);
+        }
+
+        .room-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+
+        .room-img-wrapper {
+            border: solid 1px var(--text-color);
+            overflow: hidden;
+            position: relative;
+            height: 250px;
+        }
+
+        .room-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .room-card:hover .room-img-wrapper img {
+            transform: scale(1.1);
+        }
+
+        .price-tag {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--card-bg);
+            color: var(--text-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .room-details {
+            padding: 25px;
+            color: var(--text-color);
+        }
+
+        .room-amenities i {
+            color:  #fcb001;
+            margin-right: 10px;
+            font-size: 0.9rem;
+        }
+        .btn-room{
+            color: var(--primary-color);
+        }
+        .btn-room-book {
+            color: var(--text-color);
+        }
+        /* --- Gallery Section --- */
+        #gallery {
+            background-color: var(--text-color);
+            border-bottom: solid 1px var(--gray-text);
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 24px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(252, 176, 1, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-overlay i {
+            color: red;
+            font-size: 3rem;
+        }
+          
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        /* --- Contact Section --- */
+        #contact {
+            background-color: white;
+        }
+
+        .contact-info-box {
+            padding: 30px;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(212, 163, 115, 0.1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-right: 20px;
+        }
+
+        .form-control {
+            padding: 12px 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+            border-color: var(--primary-color);
+        }
+        
+        .submit:hover{
+            color: var(--primary-color);
+        }
+        /* --- Footer --- */
+        footer {
+            background: #1a1a1a;
+            color: #aaa;
+            padding: 50px 0 20px;
+        }
+
+        .footer-brand {
+            font-family: 'Sofia', cursive;
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+            padding-left: 5px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            width: 40px;
+            height: 40px;
+            background: #333;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-right: 10px;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background: var(--primary-color);
+        }
+
+        /* --- Animations --- */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hotel-title { font-size: 3rem; }
+            .section-header h2 { font-size: 2.2rem; }
+            .promo-box { margin-bottom: 20px; }
+            .navbar-brand { padding-left: 0; }
+        }
